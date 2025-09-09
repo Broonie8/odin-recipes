@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #eee;
+}
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px auto; /* space around, centered horizontally */
+    background-color: lightblue;
+    font-size: 60px;
+    border: 8px double black;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.sub-heading {
+    text-align: center;
+    margin: 20px auto;
+    padding: 5px;
+    background-color: lightcyan;
+    border: 6px inset black;
+    border-radius: 12px;
+    font-size: 25px;
+    border-radius: 12px;
+}
+
+.figure-container img{
+  display: flex;
+  justify-content: center; /* centers figure horizontally */
+  height: 500px;
+  border-radius: 10px;
+}
+
+figure {
+  text-align: center; /* makes caption & links centered under image */
+  margin: 0;
+  padding: 0;
+}
+
+.food-ingredients {
+  display: block;       /* removes inline-gap */
+  max-width: 100%;      /* keeps image inside its container */
+  height: auto;         /* preserves proportions */
+  border: 4px outset black; 
+  width: 100%;
+}
+
+.italian {
+  background: url("/images/flag_of_italy.gif") no-repeat center center;
+  background-size: cover;    /* ensures flag covers full width */
+  height: 100px;             /* fixed height */
+  display: flex;
+  justify-content: center;   /* horizontal center */
+  align-items: center;       /* vertical center */
+  color: black;              /* or black, depending on contrast */
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  border: 4px ridge black;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.recipes {
+  display: flex;
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
+  justify-content: center;  /* center items horizontally */
+  gap: 20px; /* space between each recipe */
+  margin-top: 20px;
+}
+
+.recipe {
+  text-align: center;
+  width: 250px;  /* keeps each item neat */
+}
+
+.recipe img {
+  width: 200px;  /* size in CSS, not HTML */
+  height: 200px;
+  object-fit: cover; /* crops images nicely */
+  border: solid black; /* optional styling */
+  border-radius: 10px;
+}
+
+.recipe a {
+  text-decoration: none;
+  color: darkred;
+  font-weight: bold;
+}
+
+.button:hover {
+    background-color: darkblue;  /* slightly darker on hover */
+    transform: scale(1.05);     /* grows a bit */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* shadow effect */
+}
+
+/* Active (when clicked) */
+.button:active {
+    background-color: navy;     /* even darker when pressed */
+    transform: scale(0.95);     /* slightly smaller when pressed */
+}
+
+.food-outline {
+  align-items: end;
+  height: 100px;
+}
+
+.food-outline img {
+  align-content: end;
+}
